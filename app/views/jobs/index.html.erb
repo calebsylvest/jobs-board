@@ -1,0 +1,14 @@
+<ul class="jobs-list">
+  <% @jobs.each do |job| %>
+    <li class="job">
+      <h2>
+        <%= link_to job.title, job %>
+      </h2>
+      <p>
+        <%= job.company %>
+      </p>
+      <%= link_to "Edit", edit_job_path(job), class: "btn btn-sm btn-default" %>
+      <%= link_to "Delete", job_path(job), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-default" %>
+    </li>
+  <% end %>
+</ul><!-- /jobs-list -->

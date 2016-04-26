@@ -1,20 +1,19 @@
 source 'https://rubygems.org'
 
+ruby 2.3.0
 
 gem 'rails', '4.2.5'
 gem 'sqlite3'
+
+# js, css, asset pipeline
+gem 'autoprefixer-rails' # auto-add css vendor prefixes
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-
 
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
-gem 'haml', '~> 4.0', '>= 4.0.7'
-gem 'bootstrap', '~> 4.0.0.alpha3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
